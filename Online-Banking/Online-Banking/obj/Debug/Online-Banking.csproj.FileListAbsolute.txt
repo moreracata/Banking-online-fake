@@ -131,3 +131,4 @@ C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Ba
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.csproj.CopyComplete
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.dll
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.pdb
+C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.csprojAssemblyReference.cache

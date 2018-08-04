@@ -10,10 +10,13 @@ namespace Online_Banking.Models
     {
         public int Id { get; set; }
         public int Balance { get; set; }
+
+        public int TypeId { get; set; }
+        [ForeignKey("TypeId")]
         public TypeAccount TypeAccount { get; set; }
 
-        public int CustomerID { get; set; }
-        [ForeignKey("CustomerID")]
+        public int CustomerId { get; set; }
+        [ForeignKey("CustomerId")]
         public Customer Customer;
     }
 }

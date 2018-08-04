@@ -163,12 +163,16 @@ namespace Online_Banking.Controllers
                     db.SaveChanges();
 
 
-                    TypeAccount type1 = db.TypeAccounts.Where(x => x.Id == 1).FirstOrDefault();
-                    var creditCardAccoutDefault = new BankAccount() { };
-                    TypeAccount type1 = db.TypeAccounts.Where(x => x.Id == 2).FirstOrDefault();
-                    var loansAccoutDefault = new BankAccount() { };
-                    TypeAccount type1 = db.TypeAccounts.Where(x => x.Id == 3).FirstOrDefault();
-                    var savingAccoutDefault = new BankAccount() { };
+                    var creditCardAccoutDefault = new BankAccount() { Balance = 0, TypeId = 1, CustomerId = customer.Id };
+                    var loansAccoutDefault = new BankAccount() { Balance = 0, TypeId = 2, CustomerId = customer.Id };
+                    var savingAccoutDefault = new BankAccount() { Balance =0, TypeId = 3, CustomerId = customer.Id };
+
+                    db.BankAccounts.Add(creditCardAccoutDefault);
+                    db.BankAccounts.Add(loansAccoutDefault);
+                    db.BankAccounts.Add(savingAccoutDefault);
+
+                    db.SaveChanges();
+
                 }
 
                 if (result.Succeeded)
