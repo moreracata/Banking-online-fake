@@ -29,5 +29,9 @@ namespace Online_Banking.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<BankAccount> BankAccounts { get; set; }
+        public DbSet<TypeAccount> TypeAccounts { get; set; }
     }
 }

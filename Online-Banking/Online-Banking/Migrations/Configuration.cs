@@ -1,5 +1,6 @@
 namespace Online_Banking.Migrations
 {
+    using Online_Banking.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -9,7 +10,8 @@ namespace Online_Banking.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(Online_Banking.Models.ApplicationDbContext context)
@@ -18,6 +20,9 @@ namespace Online_Banking.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+            context.TypeAccounts.AddOrUpdate(new TypeAccount() { TypeCode = "1", TypeName = "Saving Account" });
+            context.TypeAccounts.AddOrUpdate(new TypeAccount() { TypeCode = "2", TypeName = "Credit Account" });
+            context.TypeAccounts.AddOrUpdate(new TypeAccount() { TypeCode = "3", TypeName = "Loans Account" });
         }
     }
 }

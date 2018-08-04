@@ -1,0 +1,11 @@
+﻿#loginForm {
+    text-align: center;
+}
+
+#loginForm .form-horizontal .control-label {
+    text-align: center;
+}
+
+#loginForm input {
+    max-width: 100%;
+}

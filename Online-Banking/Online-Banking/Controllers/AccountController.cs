@@ -153,6 +153,24 @@ namespace Online_Banking.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
+
+                //Create a customner and asing to him defaults accouts
+
+               using (ApplicationDbContext db = new ApplicationDbContext())
+                {
+                    var customer = new Customer() {Nombre="Default",Apellidos="Default",User =user};
+                    db.Customers.Add(customer);
+                    db.SaveChanges();
+
+
+                    TypeAccount type1 = db.TypeAccounts.Where(x => x.Id == 1).FirstOrDefault();
+                    var creditCardAccoutDefault = new BankAccount() { };
+                    TypeAccount type1 = db.TypeAccounts.Where(x => x.Id == 2).FirstOrDefault();
+                    var loansAccoutDefault = new BankAccount() { };
+                    TypeAccount type1 = db.TypeAccounts.Where(x => x.Id == 3).FirstOrDefault();
+                    var savingAccoutDefault = new BankAccount() { };
+                }
+
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
