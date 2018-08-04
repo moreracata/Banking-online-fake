@@ -127,8 +127,8 @@ C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Ba
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.csprojAssemblyReference.cache
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.csproj.CoreCompileInputs.cache
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.csproj.CopyComplete
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.dll
 C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.pdb
-C:\Users\morer_000\Documents\GitHub\Banking-online-fake\Online-Banking\Online-Banking\obj\Debug\Online-Banking.csprojAssemblyReference.cache

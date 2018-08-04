@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using Online_Banking.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,8 +11,12 @@ namespace Online_Banking.Controllers
     [Authorize]
     public class HomeController : Controller
     {
+        private UserService userService = new UserService();
         public ActionResult Index()
         {
+            
+
+            //var currentUser = userService.GetCustomerData();
             return View();
         }
 

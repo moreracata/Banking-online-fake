@@ -158,7 +158,7 @@ namespace Online_Banking.Controllers
 
                using (ApplicationDbContext db = new ApplicationDbContext())
                 {
-                    var customer = new Customer() {Nombre="Default",Apellidos="Default",User =user};
+                    var customer = new Customer() { Nombre = "Default", Apellidos = "Default", UserId = user.Id };
                     db.Customers.Add(customer);
                     db.SaveChanges();
 

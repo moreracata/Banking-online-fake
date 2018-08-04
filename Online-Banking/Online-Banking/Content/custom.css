@@ -1,11 +1,14 @@
-﻿#loginForm {
+﻿#loginForm, #registerForm {
     text-align: center;
 }
 
-#loginForm .form-horizontal .control-label {
+#loginForm .form-horizontal .control-label,
+#registerForm .form-horizontal .control-label
+{
     text-align: center;
 }
 
-#loginForm input {
+#loginForm input ,
+#registerForm input {
     max-width: 100%;
 }
